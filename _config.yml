@@ -1,0 +1,6 @@
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+permalink: blog/:year/:month/:day/:title:output_ext

@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+
+    <link rel='stylesheet' href='/assets/css/styles.css'>
+    <link href="https://fonts.googleapis.com/css?family=Blinker:400,700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div {% if page.url == '/' %}class='hbox'{% else %}class='dbox'{% endif %}>
+      {% include homebutton.html %}
+
+      <div {% if page.url == '/' %}class='hnest'{% else %}class='dnest'{% endif %}>
+        <h1>Wing-Sum Law</h1>
+        {% if page.url == '/' %}
+          <p>PhD Student, Dancer, Home Chef</p>
+        {% endif %}
+
+        {% include navigation.html %}
+        {% include social.html %}
+      
+      </div>
+      
+    </div>
+
+    <div class='content'>
+      {{ content }}
+    </div>
+
+  </body>
+</html>

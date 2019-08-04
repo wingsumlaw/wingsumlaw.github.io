@@ -1,0 +1,12 @@
+- name: Email
+  link: mailto:wslaw@stanford.edu
+  image: /assets/images/email.png
+- name: LinkedIn
+  link: https://www.linkedin.com/in/wingsumlaw/
+  image: /assets/images/linkedin.png
+- name: ResearchGate
+  link: https://www.researchgate.net/profile/Wing_Sum_Law
+  image: /assets/images/researchgate.png
+- name: Twitter
+  link: https://twitter.com/wingsumlaw
+  image: /assets/images/twitter.png
