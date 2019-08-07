@@ -4,4 +4,4 @@ title: Wing-Sum Law | Rabbits
 ---
 ## Rabbits
 
-Site under construction ¯\_(ツ)_/¯
+Charming pictures of my rabbits on their way...
