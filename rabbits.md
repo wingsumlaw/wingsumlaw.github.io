@@ -6,9 +6,9 @@ title: Wing-Sum Law | Rabbits
 
 My two rabbits, Leonora (brown) and Justin (black and white)
 
-![alt-text](/assets/images/carrier.jpg/)
-![alt-text](/assets/images/cuddle1.jpg/)
-![alt-text](/assets/images/cuddle2.jpg/)
-![alt-text](/assets/images/cuddlepod.jpg/)
-![alt-text](/assets/images/eating.jpg/)
-![alt-text](/assets/images/flop1.jpg/)
+![In carrier](/assets/images/carrier.JPG/)
+![Cuddling](/assets/images/cuddle1.JPG/)
+![Cuddling](/assets/images/cuddle2.JPG/)
+![Cuddling in cuddle pod](/assets/images/cuddlepod.JPG/)
+![Sharing dinner](/assets/images/eating.JPG/)
+![Flopping](/assets/images/flop1.JPG/)
