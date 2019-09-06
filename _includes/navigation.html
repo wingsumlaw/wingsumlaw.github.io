@@ -1,11 +1,29 @@
-<nav>
-  <ul class='nav'>
-    {% for item in site.data.navigation %}
-      <li class='nav'>
-        <a href='{{ item.link }}' {% if page.url == item.link %}class='current nav'{% else %}class='nav'{% endif %}>
-            {{ item.name }}
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
-</nav>
+{% if page.url != '/' %}
+  <nav>
+    <div class='mobnav'>
+      Menu <img src='assets/images/dropdown.png'>
+    </div>
+    <ul class='mobnavdown'>
+      {% for item in site.data.navigation %}
+        <li class='nav'>
+          <a href='{{ item.link }}' {% if page.url == item.link %}class='current nav'{% else %}class='nav'{% endif %}>
+              {{ item.name }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+{% endif %}
+{% if page.url == '/' %}
+  <nav>
+    <ul class='nav'>
+      {% for item in site.data.navigation %}
+        <li class='nav'>
+          <a href='{{ item.link }}' {% if page.url == item.link %}class='current nav'{% else %}class='nav'{% endif %}>
+              {{ item.name }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+{% endif %}

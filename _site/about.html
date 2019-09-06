@@ -5,7 +5,16 @@
     <title>Wing-Sum Law | About</title>
 
     <link rel='stylesheet' href='/assets/css/styles.css'>
-    <link href="https://fonts.googleapis.com/css?family=Blinker:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow:400,700&display=swap" rel="stylesheet">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $(".mobnav").click(function(){
+        $("ul.mobnavdown").slideToggle("slow");
+        });
+        });
+    </script>
 
   </head>
   <body>
@@ -19,59 +28,71 @@
         <h1>Wing-Sum Law</h1>
         
 
-        <nav>
-  <ul class='nav'>
-    
-      <li class='nav'>
-        <a href='/about.html' class='current nav'>
-            About
-        </a>
-      </li>
-    
-      <li class='nav'>
-        <a href='/resume.html' class='nav'>
-            Resume
-        </a>
-      </li>
-    
-      <li class='nav'>
-        <a href='/research.html' class='nav'>
-            Research
-        </a>
-      </li>
-    
-      <li class='nav'>
-        <a href='/rabbits.html' class='nav'>
-            Rabbits
-        </a>
-      </li>
-    
-  </ul>
-</nav>
-        <div class='sdefault'>
-    <ul class='nav'>
         
-            <li class='nav'>
+  <nav>
+    <div class='mobnav'>
+      Menu <img src='assets/images/dropdown.png'>
+    </div>
+    <ul class='mobnavdown'>
+      
+        <li class='nav'>
+          <a href='/about.html' class='current nav'>
+              About
+          </a>
+        </li>
+      
+        <li class='nav'>
+          <a href='/resume.html' class='nav'>
+              Resume
+          </a>
+        </li>
+      
+        <li class='nav'>
+          <a href='/research.html' class='nav'>
+              Research
+          </a>
+        </li>
+      
+        <li class='nav'>
+          <a href='/rabbits.html' class='nav'>
+              Rabbits
+          </a>
+        </li>
+      
+    </ul>
+  </nav>
+
+
+        <div class='sdefault'>
+    <ul class='soc'>
+        
+            <li class='soc'>
                 <a href='https://www.linkedin.com/in/wingsumlaw/' target='_blank' title='LinkedIn' class='social'>
                     <img class='social' src='/assets/images/linkedin.png'>
                 </a>
             </li>
         
-            <li class='nav'>
-                <a href='https://www.researchgate.net/profile/Wing_Sum_Law' target='_blank' title='ResearchGate' class='social'>
-                    <img class='social' src='/assets/images/researchgate.png'>
+            <li class='soc'>
+                <a href='https://scholar.google.com/citations?user=anHWCBwAAAAJ&hl=en' target='_blank' title='Google Scholar' class='social'>
+                    <img class='social' src='/assets/images/scholar.png'>
                 </a>
             </li>
         
-            <li class='nav'>
+            <li class='soc'>
+                <a href='https://github.com/wingsumlaw/' target='_blank' title='Github' class='social'>
+                    <img class='social' src='/assets/images/github.png'>
+                </a>
+            </li>
+        
+            <li class='soc'>
                 <a href='https://twitter.com/wingsumlaw' target='_blank' title='Twitter' class='social'>
                     <img class='social' src='/assets/images/twitter.png'>
                 </a>
             </li>
         
-            <li class='nav'>
-                <a href='https://github.com/wingsumlaw/' target='_blank' title='Github' class='social'>
-                    <img class='social' src='/assets/images/github.png'>
+            <li class='soc'>
+                <a href='https://www.instagram.com/w.a.law/' target='_blank' title='Instagram' class='social'>
+                    <img class='social' src='/assets/images/insta.png'>
                 </a>
             </li>
         
@@ -94,10 +115,14 @@
   <li>dancing with <a href="https://stanforddv8.wixsite.com/stanforddv8" target="_blank">Stanford Dv8</a>,</li>
   <li>drawing,</li>
   <li>cooking,</li>
-  <li>or relaxing with my <a href="/rabbits/">rabbits</a></li>
+  <li>or relaxing with my <a href="/rabbits.html">rabbits</a></li>
 </ul>
 
-<p><img src="/assets/images/portrait_square_small.jpg/" alt="alt-text" /></p>
+<p>I try not to take myself to seriously :)</p>
+
+<p><img src="/assets/images/portrait_square_small.jpg/" alt="Headshot" />
+<img src="/assets/images/pasta.JPG/" alt="Cooking Pasta" />
+<img src="/assets/images/turtle.JPG/" alt="AMNH" /></p>
 
     </div>
 

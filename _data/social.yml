@@ -1,12 +1,15 @@
 - name: LinkedIn
   link: https://www.linkedin.com/in/wingsumlaw/
   image: /assets/images/linkedin.png
-- name: ResearchGate
-  link: https://www.researchgate.net/profile/Wing_Sum_Law
-  image: /assets/images/researchgate.png
-- name: Twitter
-  link: https://twitter.com/wingsumlaw
-  image: /assets/images/twitter.png
+- name: Google Scholar
+  link: https://scholar.google.com/citations?user=anHWCBwAAAAJ&hl=en
+  image: /assets/images/scholar.png
 - name: Github
   link: https://github.com/wingsumlaw/
   image: /assets/images/github.png
+- name: Twitter
+  link: https://twitter.com/wingsumlaw
+  image: /assets/images/twitter.png
+- name: Instagram
+  link: https://www.instagram.com/w.a.law/
+  image: /assets/images/insta.png

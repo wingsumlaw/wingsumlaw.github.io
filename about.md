@@ -11,6 +11,10 @@ When not in lab, you might find me...
 * dancing with [Stanford Dv8](https://stanforddv8.wixsite.com/stanforddv8){:target="_blank"},
 * drawing,
 * cooking,
-* or relaxing with my [rabbits](/rabbits/)
+* or relaxing with my [rabbits](/rabbits.html)
 
-![alt-text](/assets/images/portrait_square_small.jpg/)
+I try not to take myself to seriously :)
+
+![Headshot](/assets/images/portrait_square_small.jpg/)
+![Cooking Pasta](/assets/images/pasta.JPG/)
+![AMNH](/assets/images/turtle.JPG/)

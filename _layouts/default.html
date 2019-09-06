@@ -5,7 +5,16 @@
     <title>{{ page.title }}</title>
 
     <link rel='stylesheet' href='/assets/css/styles.css'>
-    <link href="https://fonts.googleapis.com/css?family=Blinker:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow:400,700&display=swap" rel="stylesheet">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $(".mobnav").click(function(){
+        $("ul.mobnavdown").slideToggle("slow");
+        });
+        });
+    </script>
 
   </head>
   <body>

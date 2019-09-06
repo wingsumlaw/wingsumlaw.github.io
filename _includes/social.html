@@ -1,7 +1,7 @@
 <div {% if page.url != '/' %}class='sdefault'{% endif %}>
-    <ul class='nav'>
+    <ul class='soc'>
         {% for item in site.data.social %}
-            <li class='nav'>
+            <li class='soc'>
                 <a href='{{ item.link }}' target='_blank' title='{{ item.name }}' class='social'>
                     <img class='social' src='{{ item.image }}'>
                 </a>
