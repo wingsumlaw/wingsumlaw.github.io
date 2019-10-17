@@ -10,6 +10,6 @@
 - name: Twitter
   link: https://twitter.com/wingsumlaw
   image: /assets/images/twitter.png
-- name: Instagram
-  link: https://www.instagram.com/w.a.law/
-  image: /assets/images/insta.png
+#- name: Instagram
+#  link: https://www.instagram.com/w.a.law/
+#  image: /assets/images/insta.png
