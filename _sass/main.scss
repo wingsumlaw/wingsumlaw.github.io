@@ -139,6 +139,14 @@ a.social {
     display: none;
 }
 
+.smobile {
+    display: none;
+}
+
+li.mobli {
+    display: none;
+}
+
 // non-home sidebar
 .dbox {
     width: 35%;
@@ -156,7 +164,7 @@ a.social {
 
 .dnest {
     width: 100%;
-    height: 80%;
+    height: auto;
 }
 
 .sdefault {
@@ -208,10 +216,9 @@ ul.posts {
     padding: 0;
 }
 
+// ****** SMALL SCREEN ******
 
-// ****** TABLET ******
-
-@media screen and (max-width: 1165px) {
+@media screen and (max-width: 1219px) {
     body {
         font-size: 0.9em;
     }
@@ -220,6 +227,14 @@ ul.posts {
     }
     h2 {
         font-size: 1.2em;
+    }
+}
+
+// ****** TABLET ******
+
+@media screen and (max-width: 1165px) {
+    li.nav {
+        font-size:0.9em;
     }
 }
 
@@ -232,6 +247,7 @@ ul.posts {
         display: block;
         cursor: pointer;
         padding: 4px;
+        width: 8em;
         border: 1px #838383 solid;
     }
 
@@ -298,5 +314,113 @@ ul.posts {
 // ****** MOBILE ******
 
 @media screen and (max-width: 750px) {
-    
+    h1 {
+        font-size: 2em;
+    }
+
+    .hbox {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    a.home {
+        text-align: center;
+    }
+
+    li.mobli {
+        display: inline-block;
+    }
+
+    img.hindex {
+        float: none;
+        display: inline-block;
+        width: 75%;
+    }
+
+    .hnest {
+        position: static;
+        text-align: center;
+        width: 100%;
+    }
+
+    .content {
+        position: static;
+        width: 100%;
+        padding: 1.5em;
+        margin-top: 7%;
+    }
+
+    .content img {
+        width: 32%;
+    }
+
+    .sdefault {
+        display: none;
+    }
+
+    .smobile {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+
+    img.social {
+        width: 20px;
+    }
+
+    img.hdefault {
+        display: none;
+    }
+
+    .dbox {
+        width: 100%;
+        height: auto;
+        position: fixed;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        top: 0;
+        left: 0;
+        padding: 1em 1.5em;
+        background-color: #ffffb3;
+        border-bottom: 3px #ffdf80 solid;
+    }
+
+    .dbox nav {
+        width: 100%;
+    }
+
+    .mobnav {
+        text-align: right;
+        margin-left: auto;
+        border: none;
+    }
+
+    ul.mobnavdown {
+        text-align: left;
+        padding-inline-start: 0;
+        background-color: white;
+    }
+
+    ul.mobnavdown li.nav {
+        text-align: left;
+    }
+
+    a.nav.current {
+        border-bottom: none;
+        border-right: none;
+        border-left: 3px #8e4dff solid;
+        padding: 0 4px;
+    }
+
+    .dnest {
+        width: auto;
+        padding: 0;
+        text-align: left;
+    }
+
+    .dnest h1 {
+        font-size: 1.5em;
+        margin: 0;
+    }
 }

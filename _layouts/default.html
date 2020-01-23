@@ -7,7 +7,7 @@
     <link rel='stylesheet' href='/assets/css/styles.css'>
     <link href="https://fonts.googleapis.com/css?family=Barlow:400,700&display=swap" rel="stylesheet">
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script>
         $(document).ready(function(){
         $(".mobnav").click(function(){
@@ -27,16 +27,25 @@
         {% if page.url == '/' %}
           <p>PhD Student, Dancer, Aspiring Home Chef</p>
         {% endif %}
+        {% if page.url == '/' %}
+          {% include navigation.html %}
+          {% include social.html %}
+        {% endif %} 
 
-        {% include navigation.html %}
-        {% include social.html %}
+        
       
       </div>
-      
+      {% if page.url != '/' %}
+        {% include navigation.html %}
+        {% include social.html %}
+      {% endif %}
     </div>
 
     <div class='content'>
       {{ content }}
+      {% if page.url != '/' %}
+        {% include msocial.html %}
+      {% endif %}
     </div>
 
   </body>

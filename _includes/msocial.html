@@ -1,0 +1,11 @@
+<div {% if page.url != '/' %}class='smobile'{% endif %}>
+    <ul class='soc'>
+        {% for item in site.data.social %}
+            <li class='soc'>
+                <a href='{{ item.link }}' target='_blank' title='{{ item.name }}' class='social'>
+                    <img class='social' src='{{ item.image }}'>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
