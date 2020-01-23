@@ -218,7 +218,7 @@ ul.posts {
 
 // ****** SMALL SCREEN ******
 
-@media screen and (max-width: 1219px) {
+@media only screen and (max-width: 1219px) {
     body {
         font-size: 0.9em;
     }
@@ -238,7 +238,7 @@ ul.posts {
     }
 }
 
-@media screen and (max-width: 1116px) {
+@media only screen and (max-width: 1116px) {
     a.home {
         height: 18%;
     }
@@ -293,7 +293,7 @@ ul.posts {
 }
 
 
-@media screen and (max-width: 864px) {
+@media only screen and (max-width: 864px) {
     h1 {
         font-size: 1.5em;
     }
