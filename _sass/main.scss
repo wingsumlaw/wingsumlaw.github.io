@@ -8,9 +8,14 @@ body {
     font-size: 1.05em;
 }
 
+p.bigger {
+    font-size: 1.1em;
+    font-style: italic;
+}
+
 a {
     color:#8e4dff;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 
@@ -159,7 +164,7 @@ li.mobli {
     align-items: flex-end;
     resize: both;
     text-align: right;
-    padding: 0 3em;
+    padding: 0 3em 0 0 ;
 }
 
 .dnest {
@@ -213,7 +218,15 @@ img.hindex {
 
 ul.posts {
     list-style-type: none;
-    padding: 0;
+    padding: 5px 0;
+}
+
+a.bloglink {
+    color: black;
+    background-color: #ffffb3;
+    padding: 8px;
+    border: #ffdf80 solid 3px;
+    margin-left: -8px;
 }
 
 // ****** SMALL SCREEN ******
@@ -249,6 +262,10 @@ ul.posts {
         padding: 4px;
         width: 8em;
         border: 1px #838383 solid;
+    }
+
+    .dbox nav {
+        width: 8em;
     }
 
     .mobnav img {
@@ -347,7 +364,7 @@ ul.posts {
         position: static;
         width: 100%;
         padding: 1.5em;
-        margin-top: 7%;
+        margin-top: 10%;
     }
 
     .content img {

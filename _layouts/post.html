@@ -1,8 +1,10 @@
 --- 
 layout: default
-collection: blog
 ---
 <h1>{{ page.title }}</h1>
+<p class='bigger'>{{ page.subtitle }}</p class='bigger'>
 <p>{{ page.date | date_to_string }}</p>
 
 {{ content }}
+
+<a href='/blog.html'>Back to blog</a>

@@ -5,9 +5,13 @@ body {
   font-family: 'Barlow', sans-serif;
   font-size: 1.05em; }
 
+p.bigger {
+  font-size: 1.1em;
+  font-style: italic; }
+
 a {
   color: #8e4dff;
-  text-decoration: underline; }
+  text-decoration: none; }
 
 a:hover {
   opacity: 0.5; }
@@ -124,7 +128,7 @@ li.mobli {
   align-items: flex-end;
   resize: both;
   text-align: right;
-  padding: 0 3em; }
+  padding: 0 3em 0 0; }
 
 .dnest {
   width: 100%;
@@ -166,9 +170,16 @@ img.hindex {
 
 ul.posts {
   list-style-type: none;
-  padding: 0; }
+  padding: 5px 0; }
 
-@media screen and (max-width: 1219px) {
+a.bloglink {
+  color: black;
+  background-color: #ffffb3;
+  padding: 8px;
+  border: #ffdf80 solid 3px;
+  margin-left: -8px; }
+
+@media only screen and (max-width: 1219px) {
   body {
     font-size: 0.9em; }
 
@@ -180,7 +191,7 @@ ul.posts {
 @media screen and (max-width: 1165px) {
   li.nav {
     font-size: 0.9em; } }
-@media screen and (max-width: 1116px) {
+@media only screen and (max-width: 1116px) {
   a.home {
     height: 18%; }
 
@@ -190,6 +201,9 @@ ul.posts {
     padding: 4px;
     width: 8em;
     border: 1px #838383 solid; }
+
+  .dbox nav {
+    width: 8em; }
 
   .mobnav img {
     height: 1.2em;
@@ -221,7 +235,7 @@ ul.posts {
 
   img.social {
     width: 20px; } }
-@media screen and (max-width: 864px) {
+@media only screen and (max-width: 864px) {
   h1 {
     font-size: 1.5em; }
 
@@ -261,7 +275,7 @@ ul.posts {
     position: static;
     width: 100%;
     padding: 1.5em;
-    margin-top: 7%; }
+    margin-top: 10%; }
 
   .content img {
     width: 32%; }

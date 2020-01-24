@@ -1,16 +1,15 @@
 {% if page.url != '/' %}
 <div class='mobnav'>
-  Menu <img src='assets/images/dropdown.png'>
+  Menu
 </div>
   <nav>
-    
     <ul class='mobnavdown'>
       <li class='nav mobli'>
         <a href='/' class='nav'>Home</a>
       </li>
       {% for item in site.data.navigation %}
         <li class='nav'>
-          <a href='{{ item.link }}' {% if page.url == item.link %}class='current nav'{% else %}class='nav'{% endif %}>
+          <a href='{{ item.link }}' {% if page.url == item.link or page.url contains 'blog' and item.link contains 'blog' %}class='current nav'{% else %}class='nav'{% endif %}>
               {{ item.name }}
           </a>
         </li>
