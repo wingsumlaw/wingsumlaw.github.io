@@ -23,7 +23,7 @@ title: Wing-Sum Law | Resume
 
 | Experience                   |                     |
 |:---                         |                 ---:|
-| _CSNE at the University of Washington_ <br> REU student developing models and simulating gait for children with cerebral palsy in [Dr. Kat Steel's group](https://steelelab.me.uw.edu/){:target="_blank"}  | Summer 2017 |
+| _CSNE at the University of Washington_ <br> REU student developing models and simulating gait for children with cerebral palsy in [Dr. Kat Steele's group](https://steelelab.me.uw.edu/){:target="_blank"}  | Summer 2017 |
 | _Undergraduate Research at Columbia University_ <br> Undergraduate Researcher and Amgen Scholar (Summer 2016) in [Dr. Gerard Ateshian's lab](https://mbl.me.columbia.edu/){:target="_blank"} researching cartilage mechanics and engineering     | Winter 2016 - Spring 2017 |
 | _Seattle Genetics_ <br> Researched acquired aplastic anemia etiology and its possible treatment using an antibody-drug conjugate | Summer 2015 |
 

@@ -7,9 +7,13 @@
 - name: Github
   link: https://github.com/wingsumlaw/
   image: /assets/images/github.png
+- name: Observable
+  link: https://observablehq.com/@wingsumlaw
+  image: /assets/images/observable.png
 - name: Twitter
   link: https://twitter.com/wingsumlaw
   image: /assets/images/twitter.png
+
 #- name: Instagram
 #  link: https://www.instagram.com/w.a.law/
 #  image: /assets/images/insta.png

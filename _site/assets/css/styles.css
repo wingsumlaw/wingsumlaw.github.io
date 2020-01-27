@@ -33,16 +33,26 @@ table td {
 
 .content {
   position: absolute;
+  text-align: justify;
   padding: 1.5em 2em 1.5em 1em;
   left: 35%;
   width: 65%; }
 
 .content img {
   width: 30%;
-  display: inline-block; }
+  display: inline-block;
+  padding: 1px; }
+
+.content img.full {
+  width: 85%;
+  margin: 0 auto;
+  display: block; }
 
 .content a {
   font-weight: bold; }
+
+iframe {
+  margin: 0 auto !important; }
 
 a.nav.current {
   font-weight: 700;
@@ -278,7 +288,7 @@ a.bloglink {
     margin-top: 10%; }
 
   .content img {
-    width: 32%; }
+    width: 48%; }
 
   .sdefault {
     display: none; }
