@@ -1,4 +1,113 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-27T14:57:11-08:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">First Post, Worst Post?</title><link href="http://localhost:4000/blog/2020/01/27/first-post.html" rel="alternate" type="text/html" title="First Post, Worst Post?" /><published>2020-01-27T00:00:00-08:00</published><updated>2020-01-27T00:00:00-08:00</updated><id>http://localhost:4000/blog/2020/01/27/first-post</id><content type="html" xml:base="http://localhost:4000/blog/2020/01/27/first-post.html">&lt;p&gt;Back in August of last year, I drew a basic illustration depicting the menstrual cycle. It has since become a main feature on all of my web presence.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-01T19:36:28-08:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Viscoelasticity &amp;amp; Plasticity, Visualized</title><link href="http://localhost:4000/blog/2020/03/01/viscoelasticity-plasticity-visualized.html" rel="alternate" type="text/html" title="Viscoelasticity &amp; Plasticity, Visualized" /><published>2020-03-01T00:00:00-08:00</published><updated>2020-03-01T00:00:00-08:00</updated><id>http://localhost:4000/blog/2020/03/01/viscoelasticity-plasticity-visualized</id><content type="html" xml:base="http://localhost:4000/blog/2020/03/01/viscoelasticity-plasticity-visualized.html">&lt;p&gt;Elasticity, viscosity, and plasticity are important material parameters. But what do they actually look like? And why should biologists care about these properties?&lt;/p&gt;
+
+&lt;script type=&quot;module&quot;&gt;
+    // Load the Observable runtime and inspector.
+    import {Runtime, Inspector} from &quot;https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js&quot;;
+    import notebook from &quot;https://api.observablehq.com/@wingsumlaw/viscoelasticity-plasticity-visualized.js?v=3&quot;;
+
+    const renders = {
+        &quot;intro&quot;: &quot;intro&quot;,
+        &quot;viewof inputs&quot;: &quot;viewof-inputs&quot;,
+        &quot;intro2&quot;: &quot;intro2&quot;,
+        &quot;anim&quot;: &quot;anim&quot;,
+        &quot;materials&quot;: &quot;materials&quot;,
+        &quot;examples&quot;: &quot;examples&quot;,
+        &quot;materials2&quot;: &quot;materials2&quot;,
+        &quot;creepExample&quot;: &quot;creepExample&quot;,
+        &quot;materials3&quot;: &quot;materials3&quot;,
+        &quot;biology&quot;: &quot;biology&quot;,
+        &quot;biology2&quot;: &quot;biology2&quot;,
+        &quot;cellAnim&quot;: &quot;cellAnim&quot;,
+        &quot;biology3&quot;: &quot;biology3&quot;,
+        &quot;model&quot;: &quot;model&quot;,
+        &quot;eq&quot;: &quot;eq&quot;,
+        &quot;model2&quot;: &quot;model2&quot;,
+        &quot;circuit&quot;: &quot;circuit&quot;,
+        &quot;model3&quot;: &quot;model3&quot;,
+        &quot;eq2&quot;: &quot;eq2&quot;,
+        &quot;model4&quot;: &quot;model4&quot;,
+        &quot;eq3&quot;: &quot;eq3&quot;,
+        &quot;model5&quot;: &quot;model5&quot;,
+        &quot;eq4&quot;: &quot;eq4&quot;,
+        &quot;eq5&quot;: &quot;eq5&quot;
+    };
+
+    new Runtime().module(notebook, name =&gt; {
+        const selector = renders[name]
+        if (selector) {
+            $('#20200301').append(`&lt;div id=${selector}&gt;&lt;/div&gt;`);
+            return new Inspector(document.getElementById(selector));
+        }
+    });
+&lt;/script&gt;
+
+&lt;style&gt;
+    button {
+    background-color: #8a9bb8;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    opacity: 0.9;
+    height: 30px;
+    margin-left: 0px;
+    padding: 5px 10px 5px 10px;
+    border: 0.5px solid white;
+    border-radius: 5px;
+    color: white;
+    font-family: Avenir, Arial;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    }
+    button:hover {
+    opacity: 0.7;
+    }
+    .inputGrid {
+    display: inline-block;
+    margin: 2px;
+    }
+    input {
+    width: 100px!important;
+    }
+&lt;/style&gt;
+
+&lt;div id=&quot;20200301&quot; class=&quot;full-width&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;Check out the whole notebook on &lt;a href=&quot;https://observablehq.com/@wingsumlaw/viscoelasticity-plasticity-visualized&quot; target=&quot;_blank&quot;&gt;Observablehq&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="data-viz" /><category term="d3-js" /><summary type="html">Elasticity, viscosity, and plasticity are important material parameters. But what do they actually look like? And why should biologists care about these properties?</summary></entry><entry><title type="html">Graphing CrossRef Publications Over Time</title><link href="http://localhost:4000/blog/2020/02/18/graphing-publications.html" rel="alternate" type="text/html" title="Graphing CrossRef Publications Over Time" /><published>2020-02-18T00:00:00-08:00</published><updated>2020-02-18T00:00:00-08:00</updated><id>http://localhost:4000/blog/2020/02/18/graphing-publications</id><content type="html" xml:base="http://localhost:4000/blog/2020/02/18/graphing-publications.html">&lt;p&gt;In an attempt to learn d3.js and how to use an API, I created a graph that depicts journal article trends on CrossRef.&lt;/p&gt;
+
+&lt;script type=&quot;module&quot;&gt;
+
+// Load the Observable runtime and inspector.
+import {Runtime, Inspector} from &quot;https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js&quot;;
+import notebook from &quot;https://api.observablehq.com/@wingsumlaw/learning-basic-d3-js-api-utilisation-using-the-crossref-api.js?v=3&quot;;
+
+const renders = {
+    &quot;intro&quot;: &quot;intro&quot;,
+    &quot;viewof f&quot;: &quot;viewof-f&quot;,
+    &quot;legend&quot;: &quot;legend&quot;,
+    &quot;chart&quot;: &quot;chart&quot;,
+    &quot;moreInfo&quot;: &quot;moreInfo&quot;
+};
+
+new Runtime().module(notebook, name =&gt; {
+    const selector = renders[name]
+  if (selector) {
+    return new Inspector(document.getElementById(selector));
+  }
+});
+
+&lt;/script&gt;
+
+&lt;div id=&quot;20200218&quot; class=&quot;full-width&quot;&gt;
+    &lt;div id=&quot;intro&quot;&gt;&lt;/div&gt;
+    &lt;div id=&quot;viewof-f&quot;&gt;&lt;/div&gt;
+    &lt;div id=&quot;legend&quot;&gt;&lt;/div&gt;
+    &lt;div id=&quot;chart&quot;&gt;&lt;/div&gt;
+    &lt;div id=&quot;moreInfo&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Check out the whole notebook on &lt;a href=&quot;https://observablehq.com/@wingsumlaw/learning-basic-d3-js-api-utilisation-using-the-crossref-api&quot; target=&quot;_blank&quot;&gt;Observablehq&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="data-viz" /><category term="d3-js" /><summary type="html">In an attempt to learn d3.js and how to use an API, I created a graph that depicts journal article trends on CrossRef.</summary></entry><entry><title type="html">First Post, Worst Post?</title><link href="http://localhost:4000/blog/2020/01/27/first-post.html" rel="alternate" type="text/html" title="First Post, Worst Post?" /><published>2020-01-27T00:00:00-08:00</published><updated>2020-01-27T00:00:00-08:00</updated><id>http://localhost:4000/blog/2020/01/27/first-post</id><content type="html" xml:base="http://localhost:4000/blog/2020/01/27/first-post.html">&lt;p&gt;Back in August of last year, I drew a basic illustration depicting the menstrual cycle. It has since become a main feature on all of my web presence.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/home.png/&quot; alt=&quot;Menstrual Cycle&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
 

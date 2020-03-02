@@ -1,7 +1,7 @@
 ---
 layout: post
 title: First Post, Worst Post?
-subtitle: A brief explanation of the illustration on my home page
+description: A brief explanation of the illustration on my home page
 category: blog
 tags: digital-illustration goals recommendations data-viz
 ---

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Blog</title>
+    <title>Viscoelasticity & Plasticity, Visualized</title>
 
     <link rel='stylesheet' href='/assets/css/styles.css'>
     <link href="https://fonts.googleapis.com/css?family=Barlow:400,700&display=swap" rel="stylesheet">
@@ -118,38 +118,90 @@
     </div>
 
     <div class='content'>
-      <h1>Blog</h1>
+      <h1>Viscoelasticity & Plasticity, Visualized</h1>
+<p class='bigger'></p class='bigger'>
+<p>01 Mar 2020</p>
 
-<ul class='posts'>
-    
-        <li>
-            <h2><a class='bloglink' href='/blog/2020/03/01/viscoelasticity-plasticity-visualized.html'>Viscoelasticity & Plasticity, Visualized</a></h2>
-            <p class='bigger'>An interactive figure showing elastic, viscous, and plastic behaviors.</p>
-            <p><p>Elasticity, viscosity, and plasticity are important material parameters. But what do they actually look like? And why should biologists care about these properties?</p>
+<p>Elasticity, viscosity, and plasticity are important material parameters. But what do they actually look like? And why should biologists care about these properties?</p>
 
-</p>
-        </li>
-        <li>&nbsp;</li>
-    
-        <li>
-            <h2><a class='bloglink' href='/blog/2020/02/18/graphing-publications.html'>Graphing CrossRef Publications Over Time</a></h2>
-            <p class='bigger'>A way for me to learn some D3.js basics</p>
-            <p><p>In an attempt to learn d3.js and how to use an API, I created a graph that depicts journal article trends on CrossRef.</p>
+<script type="module">
+    // Load the Observable runtime and inspector.
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+    import notebook from "https://api.observablehq.com/@wingsumlaw/viscoelasticity-plasticity-visualized.js?v=3";
 
-</p>
-        </li>
-        <li>&nbsp;</li>
-    
-        <li>
-            <h2><a class='bloglink' href='/blog/2020/01/27/first-post.html'>First Post, Worst Post?</a></h2>
-            <p class='bigger'>A brief explanation of the illustration on my home page</p>
-            <p><p>Back in August of last year, I drew a basic illustration depicting the menstrual cycle. It has since become a main feature on all of my web presence.</p>
+    const renders = {
+        "intro": "intro",
+        "viewof inputs": "viewof-inputs",
+        "intro2": "intro2",
+        "anim": "anim",
+        "materials": "materials",
+        "examples": "examples",
+        "materials2": "materials2",
+        "creepExample": "creepExample",
+        "materials3": "materials3",
+        "biology": "biology",
+        "biology2": "biology2",
+        "cellAnim": "cellAnim",
+        "biology3": "biology3",
+        "model": "model",
+        "eq": "eq",
+        "model2": "model2",
+        "circuit": "circuit",
+        "model3": "model3",
+        "eq2": "eq2",
+        "model4": "model4",
+        "eq3": "eq3",
+        "model5": "model5",
+        "eq4": "eq4",
+        "eq5": "eq5"
+    };
 
-</p>
-        </li>
-        <li>&nbsp;</li>
-    
-</ul>
+    new Runtime().module(notebook, name => {
+        const selector = renders[name]
+        if (selector) {
+            $('#20200301').append(`<div id=${selector}></div>`);
+            return new Inspector(document.getElementById(selector));
+        }
+    });
+</script>
+
+<style>
+    button {
+    background-color: #8a9bb8;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    opacity: 0.9;
+    height: 30px;
+    margin-left: 0px;
+    padding: 5px 10px 5px 10px;
+    border: 0.5px solid white;
+    border-radius: 5px;
+    color: white;
+    font-family: Avenir, Arial;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    }
+    button:hover {
+    opacity: 0.7;
+    }
+    .inputGrid {
+    display: inline-block;
+    margin: 2px;
+    }
+    input {
+    width: 100px!important;
+    }
+</style>
+
+<div id="20200301" class="full-width"></div>
+
+<p>Check out the whole notebook on <a href="https://observablehq.com/@wingsumlaw/viscoelasticity-plasticity-visualized" target="_blank">Observablehq</a></p>
+
+
+<a href='/blog.html'>Back to blog</a>
       
         <div class='smobile'>
     <ul class='soc'>

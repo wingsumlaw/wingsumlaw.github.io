@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Blog</title>
+    <title>Graphing CrossRef Publications Over Time</title>
 
     <link rel='stylesheet' href='/assets/css/styles.css'>
     <link href="https://fonts.googleapis.com/css?family=Barlow:400,700&display=swap" rel="stylesheet">
@@ -118,38 +118,47 @@
     </div>
 
     <div class='content'>
-      <h1>Blog</h1>
+      <h1>Graphing CrossRef Publications Over Time</h1>
+<p class='bigger'></p class='bigger'>
+<p>18 Feb 2020</p>
 
-<ul class='posts'>
-    
-        <li>
-            <h2><a class='bloglink' href='/blog/2020/03/01/viscoelasticity-plasticity-visualized.html'>Viscoelasticity & Plasticity, Visualized</a></h2>
-            <p class='bigger'>An interactive figure showing elastic, viscous, and plastic behaviors.</p>
-            <p><p>Elasticity, viscosity, and plasticity are important material parameters. But what do they actually look like? And why should biologists care about these properties?</p>
+<p>In an attempt to learn d3.js and how to use an API, I created a graph that depicts journal article trends on CrossRef.</p>
 
-</p>
-        </li>
-        <li>&nbsp;</li>
-    
-        <li>
-            <h2><a class='bloglink' href='/blog/2020/02/18/graphing-publications.html'>Graphing CrossRef Publications Over Time</a></h2>
-            <p class='bigger'>A way for me to learn some D3.js basics</p>
-            <p><p>In an attempt to learn d3.js and how to use an API, I created a graph that depicts journal article trends on CrossRef.</p>
+<script type="module">
 
-</p>
-        </li>
-        <li>&nbsp;</li>
-    
-        <li>
-            <h2><a class='bloglink' href='/blog/2020/01/27/first-post.html'>First Post, Worst Post?</a></h2>
-            <p class='bigger'>A brief explanation of the illustration on my home page</p>
-            <p><p>Back in August of last year, I drew a basic illustration depicting the menstrual cycle. It has since become a main feature on all of my web presence.</p>
+// Load the Observable runtime and inspector.
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import notebook from "https://api.observablehq.com/@wingsumlaw/learning-basic-d3-js-api-utilisation-using-the-crossref-api.js?v=3";
 
-</p>
-        </li>
-        <li>&nbsp;</li>
-    
-</ul>
+const renders = {
+    "intro": "intro",
+    "viewof f": "viewof-f",
+    "legend": "legend",
+    "chart": "chart",
+    "moreInfo": "moreInfo"
+};
+
+new Runtime().module(notebook, name => {
+    const selector = renders[name]
+  if (selector) {
+    return new Inspector(document.getElementById(selector));
+  }
+});
+
+</script>
+
+<div id="20200218" class="full-width">
+    <div id="intro"></div>
+    <div id="viewof-f"></div>
+    <div id="legend"></div>
+    <div id="chart"></div>
+    <div id="moreInfo"></div>
+</div>
+
+<p>Check out the whole notebook on <a href="https://observablehq.com/@wingsumlaw/learning-basic-d3-js-api-utilisation-using-the-crossref-api" target="_blank">Observablehq</a></p>
+
+
+<a href='/blog.html'>Back to blog</a>
       
         <div class='smobile'>
     <ul class='soc'>

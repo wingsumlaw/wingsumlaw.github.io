@@ -45,8 +45,8 @@ table td {
     position: absolute;
     text-align: justify;
     padding: 1.5em 2em 1.5em 1em;
-    left: 35%;
-    width: 65%;
+    left: 30%;
+    width: 70%;
 }
 
 .content img {
@@ -102,9 +102,9 @@ ul.soc {
 
 li.nav {
     display: inline;
-    margin: 0px 5px;
+    margin: 0px 3px;
     text-align: center;
-    font-size: 1em;
+    font-size:0.9em;
 }
 
 li.soc {
@@ -166,7 +166,7 @@ li.mobli {
 
 // non-home sidebar
 .dbox {
-    width: 35%;
+    width: 30%;
     height: 90%;
     position: fixed;
     top: 5%;
@@ -241,6 +241,11 @@ a.bloglink {
     margin-left: -8px;
 }
 
+// embed observable
+.fullwidth {
+    width: 100%;
+  }
+
 // ****** SMALL SCREEN ******
 
 @media only screen and (max-width: 1219px) {
@@ -259,7 +264,7 @@ a.bloglink {
 
 @media screen and (max-width: 1165px) {
     li.nav {
-        font-size:0.9em;
+        font-size:0.75em;
     }
 }
 
