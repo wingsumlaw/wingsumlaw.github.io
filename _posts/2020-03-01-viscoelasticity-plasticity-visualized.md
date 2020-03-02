@@ -79,6 +79,7 @@ Elasticity, viscosity, and plasticity are important material parameters. But wha
     }
 </style>
 
-<div id="20200301" class="full-width"></div>
+<div id="20200301" class="full-width">
+</div>
 
 Check out the whole notebook on [Observablehq](https://observablehq.com/@wingsumlaw/viscoelasticity-plasticity-visualized){:target="_blank"}
