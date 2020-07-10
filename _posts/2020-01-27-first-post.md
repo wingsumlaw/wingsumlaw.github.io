@@ -8,7 +8,7 @@ tags: digital-illustration goals recommendations data-viz
 
 Back in August of last year, I drew a basic illustration depicting the menstrual cycle. It has since become a main feature on all of my web presence. 
 
-![Menstrual Cycle](/assets/images/home.png/){: .full}
+![Menstrual Cycle](/assets/images/home.png){: .full}
 
 In high school, I loved illustration and design. But because of some combination of lack of time, supplies, and drive, that hobby has since been neglected. Every few months I feel a renewed desire to get back into it, but it has yet to stick.
 
