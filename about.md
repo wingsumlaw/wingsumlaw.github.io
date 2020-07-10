@@ -13,7 +13,7 @@ When not in lab, you might find me...
 * coding,
 * or relaxing with my [rabbits](/rabbits.html)
 
-I try not to take myself to seriously :)
+I try not to take myself too seriously :)
 
 ![Headshot](/assets/images/portrait_square_small.jpg/)
 ![Cooking Pasta](/assets/images/pasta.JPG/)
