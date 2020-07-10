@@ -44,13 +44,14 @@ table td {
 .content {
     position: absolute;
     text-align: justify;
-    padding: 1.5em 2em 1.5em 1em;
-    left: 30%;
+    padding: 1.5em;
+    left: 15%;
     width: 70%;
+    margin-top: 5%;
 }
 
 .content img {
-    width: 30%;
+    width: 32%;
     display: inline-block;
     padding: 1px;
 }
@@ -83,28 +84,26 @@ a.nav {
     text-decoration: none;
 }
 
-a.home:hover {
-    opacity: 1;
-}
-
 ul.nav {
     padding: 0;
 }
 
 ul.mobnavdown {
-    padding: none;
+    padding: 0;
+    margin: 0;
     border: none;
 }
 
 ul.soc {
     padding: 0;
+    margin: 15px 0 0 0;
 }
 
 li.nav {
     display: inline;
     margin: 0px 3px;
     text-align: center;
-    font-size:0.9em;
+    font-size:1em;
 }
 
 li.soc {
@@ -154,47 +153,61 @@ a.social {
 
 .mobnav {
     display: none;
-}
-
-.smobile {
-    display: none;
+    align-self: center;
 }
 
 li.mobli {
     display: none;
 }
 
+nav.mobile {
+    display: none;
+}
+
 // non-home sidebar
 .dbox {
-    width: 30%;
-    height: 90%;
+    width: 100%;
+    height: auto;
     position: fixed;
-    top: 5%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    top: 0;
     left: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    resize: both;
-    text-align: right;
-    padding: 0 3em 0 0 ;
+    padding: 1em 1.5em;
+    background-color:#FFFFFF;
+    display:flex;
+    box-shadow: 0px 10px 10px #bababa;
+    z-index:1000;
 }
 
 .dnest {
-    width: 100%;
+    width: auto;
     height: auto;
+    text-align: right;
+    align-self: center;
 }
 
 .sdefault {
-    position: absolute;
-    right: 4em;
-    bottom: 0;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
 }
 
 a.home {
-    height: 20%;
+    align-self: center;
+    color: black;
+    font-size: 2em;
+    font-weight: bold;
 }
+
+a.home:over{
+    opacity: 0.5;
+}
+
 img.hdefault {
-    height: 100%;
+    display: none;
 }
 
 // ****** HOME ******
@@ -241,6 +254,14 @@ a.bloglink {
     margin-left: -8px;
 }
 
+.blogback {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
 // embed observable
 .fullwidth {
     width: 100%;
@@ -260,60 +281,9 @@ a.bloglink {
     }
 }
 
-// ****** TABLET ******
-
-@media screen and (max-width: 1165px) {
-    li.nav {
-        font-size:0.75em;
-    }
-}
-
 @media only screen and (max-width: 1116px) {
     a.home {
         height: 18%;
-    }
-
-    .mobnav {
-        display: block;
-        cursor: pointer;
-        padding: 4px;
-        width: 8em;
-        border: 1px #838383 solid;
-    }
-
-    .dbox nav {
-        width: 8em;
-    }
-
-    .mobnav img {
-        height: 1.2em;
-        display: inline-block;
-    }
-
-    ul.mobnavdown {
-        text-align: right;
-        display: none;
-        border: 1px #cccccc solid;
-    }
-
-    ul.mobnavdown li.nav {
-        display: block;
-        text-align: right;
-        margin: 5px;
-    }
-
-    a.nav.current {
-        border-bottom: none;
-        border-right: 3px #8e4dff solid;
-        padding: 0 4px;
-    }
-
-    ul.mobnavdown li:first-child {
-        margin: 5px;
-    }
-    
-    ul.mobnavdown li:last-child {
-        margin: 5px;
     }
 
     .content {
@@ -359,6 +329,16 @@ a.bloglink {
 
     a.home {
         text-align: center;
+        align-self: start;
+    }
+
+    nav.desktop {
+        display: none;
+    }
+
+    nav.mobile {
+        display: block;
+        margin-top: 5px;
     }
 
     li.mobli {
@@ -388,36 +368,12 @@ a.bloglink {
         width: 48%;
     }
 
-    .sdefault {
-        display: none;
-    }
-
-    .smobile {
-        display: inline-block;
-        width: 100%;
-        text-align: center;
-    }
-
     img.social {
         width: 20px;
     }
 
     img.hdefault {
         display: none;
-    }
-
-    .dbox {
-        width: 100%;
-        height: auto;
-        position: fixed;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        top: 0;
-        left: 0;
-        padding: 1em 1.5em;
-        background-color: #ffffb3;
-        border-bottom: 3px #ffdf80 solid;
     }
 
     .dbox nav {
@@ -434,10 +390,12 @@ a.bloglink {
         text-align: left;
         padding-inline-start: 0;
         background-color: white;
+        display: none;
     }
 
     ul.mobnavdown li.nav {
         text-align: left;
+        display: block;
     }
 
     a.nav.current {
@@ -451,10 +409,33 @@ a.bloglink {
         width: auto;
         padding: 0;
         text-align: left;
+        align-self: start;
+        margin-top: 10px;
     }
 
     .dnest h1 {
         font-size: 1.5em;
         margin: 0;
     }
+
+    .mobnav {
+        display: block;
+        cursor: pointer;
+        padding: 4px;
+        width: 8em;
+    }
+
+    .mobnav img {
+        height: 1.2em;
+        display: inline-block;
+    }
+
+    ul.mobnavdown li:first-child {
+        margin: 0px 3px;
+    }
+
+    ul.mobnavdown li:last-child {
+        margin: 0px 3px;
+    }
+
 }

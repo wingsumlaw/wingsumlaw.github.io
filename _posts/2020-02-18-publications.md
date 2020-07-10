@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Graphing CrossRef Publications Over Time
+title: CrossRef Publications Over Time
 description: A way for me to learn some D3.js basics
 category: blog
 tags: data-viz d3-js

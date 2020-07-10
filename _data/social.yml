@@ -7,9 +7,9 @@
 - name: Github
   link: https://github.com/wingsumlaw/
   image: /assets/images/github.png
-- name: Observable
-  link: https://observablehq.com/@wingsumlaw
-  image: /assets/images/observable.png
+#- name: Observable
+#  link: https://observablehq.com/@wingsumlaw
+#  image: /assets/images/observable.png
 - name: Twitter
   link: https://twitter.com/wingsumlaw
   image: /assets/images/twitter.png
