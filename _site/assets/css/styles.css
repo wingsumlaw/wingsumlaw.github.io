@@ -167,6 +167,10 @@ a.home:over {
 img.hdefault {
   display: none; }
 
+img.hfav {
+  display: inline-block;
+  height: 0.8em; }
+
 img.hindex {
   width: 50%;
   float: left; }
