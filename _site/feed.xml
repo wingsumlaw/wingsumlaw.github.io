@@ -1,4 +1,64 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-09T18:40:29-07:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Viscoelasticity &amp;amp; Plasticity, Visualized</title><link href="http://localhost:4000/blog/2020/03/01/viscoelasticity-plasticity-visualized.html" rel="alternate" type="text/html" title="Viscoelasticity &amp; Plasticity, Visualized" /><published>2020-03-01T00:00:00-08:00</published><updated>2020-03-01T00:00:00-08:00</updated><id>http://localhost:4000/blog/2020/03/01/viscoelasticity-plasticity-visualized</id><content type="html" xml:base="http://localhost:4000/blog/2020/03/01/viscoelasticity-plasticity-visualized.html">&lt;p&gt;Elasticity, viscosity, and plasticity are important material parameters. But what do they actually look like? And why should biologists care about these properties?&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-27T15:28:00-07:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Commuting &amp;amp; Income in the Bay Area</title><link href="http://localhost:4000/blog/2020/07/27/bay-commute.html" rel="alternate" type="text/html" title="Commuting &amp; Income in the Bay Area" /><published>2020-07-27T00:00:00-07:00</published><updated>2020-07-27T00:00:00-07:00</updated><id>http://localhost:4000/blog/2020/07/27/bay-commute</id><content type="html" xml:base="http://localhost:4000/blog/2020/07/27/bay-commute.html">&lt;p&gt;I never did finish this, but I probably won’t so I’m putting it out there now.&lt;/p&gt;
+
+&lt;script type=&quot;module&quot;&gt;
+    // Load the Observable runtime and inspector.
+    import {Runtime, Inspector} from &quot;https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js&quot;;
+    import notebook from &quot;https://api.observablehq.com/@wingsumlaw/congestion-commute-time-and-median-income.js?v=3&quot;;
+
+    const renders = {
+        &quot;viewof yr&quot;: &quot;viewof-yr&quot;,
+        &quot;bayMap&quot;: &quot;bayMap&quot;,
+        &quot;legends&quot;: &quot;legends&quot;,
+        &quot;sub&quot;: &quot;sub&quot;,
+        &quot;lineGraphs&quot;: &quot;lineGraphs&quot;
+    };
+
+    new Runtime().module(notebook, name =&gt; {
+        const selector = renders[name]
+        if (selector) {
+            $('#20200727').append(`&lt;div id=${selector}&gt;&lt;/div&gt;`);
+            return new Inspector(document.getElementById(selector));
+        }
+    });
+&lt;/script&gt;
+
+&lt;style&gt;
+    button {
+    background-color: #8a9bb8;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    opacity: 0.9;
+    height: 30px;
+    margin-left: 0px;
+    padding: 5px 10px 5px 10px;
+    border: 0.5px solid white;
+    border-radius: 5px;
+    color: white;
+    font-family: Avenir, Arial;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    }
+    button:hover {
+    opacity: 0.7;
+    }
+    .inputGrid {
+    display: inline-block;
+    margin: 2px;
+    }
+    input {
+    width: 100px!important;
+    }
+&lt;/style&gt;
+
+&lt;div id=&quot;20200727&quot; class=&quot;full-width&quot;&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This data all comes from the &lt;a href=&quot;https://www.vitalsigns.mtc.ca.gov/data-center&quot; target=&quot;_blank&quot;&gt;Metropolitan Transportation Commission of California&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Check out the whole notebook on &lt;a href=&quot;https://observablehq.com/@wingsumlaw/congestion-commute-time-and-median-income&quot; target=&quot;_blank&quot;&gt;Observablehq&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="data-viz" /><category term="d3-js" /><summary type="html">I never did finish this, but I probably won’t so I’m putting it out there now.</summary></entry><entry><title type="html">Viscoelasticity &amp;amp; Plasticity, Visualized</title><link href="http://localhost:4000/blog/2020/03/01/viscoelasticity-plasticity-visualized.html" rel="alternate" type="text/html" title="Viscoelasticity &amp; Plasticity, Visualized" /><published>2020-03-01T00:00:00-08:00</published><updated>2020-03-01T00:00:00-08:00</updated><id>http://localhost:4000/blog/2020/03/01/viscoelasticity-plasticity-visualized</id><content type="html" xml:base="http://localhost:4000/blog/2020/03/01/viscoelasticity-plasticity-visualized.html">&lt;p&gt;Elasticity, viscosity, and plasticity are important material parameters. But what do they actually look like? And why should biologists care about these properties?&lt;/p&gt;
 
 &lt;script type=&quot;module&quot;&gt;
     // Load the Observable runtime and inspector.

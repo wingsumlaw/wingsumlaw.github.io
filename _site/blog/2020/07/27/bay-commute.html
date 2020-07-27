@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Blog</title>
+    <title>Commuting & Income in the Bay Area</title>
 
     <link rel='stylesheet' href='/assets/css/styles.css'>
     <link href="https://fonts.googleapis.com/css?family=Barlow:400,700&display=swap" rel="stylesheet">
@@ -120,51 +120,75 @@
     </div>
 
     <div class='content'>
-      <h1>Blog</h1>
+      <h1>Commuting & Income in the Bay Area</h1>
+<p class='bigger'></p class='bigger'>
+<p>27 Jul 2020</p>
 
-<ul class='posts'>
-    
-        <li>
-            <h2><a class='bloglink' href='/blog/2020/07/27/bay-commute.html'>Commuting & Income in the Bay Area</a></h2>
-            <p>2020-07-27</p>
-            <p class='bigger'>An incomplete doodle of Bay Area commuting and income</p>
-            <p><p>I never did finish this, but I probably won’t so I’m putting it out there now.</p>
+<p>I never did finish this, but I probably won’t so I’m putting it out there now.</p>
 
-</p>
-        </li>
-        <li>&nbsp;</li>
-    
-        <li>
-            <h2><a class='bloglink' href='/blog/2020/03/01/viscoelasticity-plasticity-visualized.html'>Viscoelasticity & Plasticity, Visualized</a></h2>
-            <p>2020-03-01</p>
-            <p class='bigger'>An interactive figure showing elastic, viscous, and plastic behaviors.</p>
-            <p><p>Elasticity, viscosity, and plasticity are important material parameters. But what do they actually look like? And why should biologists care about these properties?</p>
+<script type="module">
+    // Load the Observable runtime and inspector.
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+    import notebook from "https://api.observablehq.com/@wingsumlaw/congestion-commute-time-and-median-income.js?v=3";
 
-</p>
-        </li>
-        <li>&nbsp;</li>
-    
-        <li>
-            <h2><a class='bloglink' href='/blog/2020/02/18/publications.html'>CrossRef Publications Over Time</a></h2>
-            <p>2020-02-18</p>
-            <p class='bigger'>A way for me to learn some D3.js basics</p>
-            <p><p>In an attempt to learn d3.js and how to use an API, I created a graph that depicts journal article trends on CrossRef.</p>
+    const renders = {
+        "viewof yr": "viewof-yr",
+        "bayMap": "bayMap",
+        "legends": "legends",
+        "sub": "sub",
+        "lineGraphs": "lineGraphs"
+    };
 
-</p>
-        </li>
-        <li>&nbsp;</li>
-    
-        <li>
-            <h2><a class='bloglink' href='/blog/2020/01/27/first-post.html'>First Post, Worst Post?</a></h2>
-            <p>2020-01-27</p>
-            <p class='bigger'>A brief explanation of the illustration on my home page</p>
-            <p><p>Back in August of last year, I drew a basic illustration depicting the menstrual cycle. It has since become a main feature on all of my web presence.</p>
+    new Runtime().module(notebook, name => {
+        const selector = renders[name]
+        if (selector) {
+            $('#20200727').append(`<div id=${selector}></div>`);
+            return new Inspector(document.getElementById(selector));
+        }
+    });
+</script>
 
-</p>
-        </li>
-        <li>&nbsp;</li>
-    
-</ul>
+<style>
+    button {
+    background-color: #8a9bb8;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    opacity: 0.9;
+    height: 30px;
+    margin-left: 0px;
+    padding: 5px 10px 5px 10px;
+    border: 0.5px solid white;
+    border-radius: 5px;
+    color: white;
+    font-family: Avenir, Arial;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    }
+    button:hover {
+    opacity: 0.7;
+    }
+    .inputGrid {
+    display: inline-block;
+    margin: 2px;
+    }
+    input {
+    width: 100px!important;
+    }
+</style>
+
+<div id="20200727" class="full-width">
+</div>
+
+<p>This data all comes from the <a href="https://www.vitalsigns.mtc.ca.gov/data-center" target="_blank">Metropolitan Transportation Commission of California</a></p>
+
+<p>Check out the whole notebook on <a href="https://observablehq.com/@wingsumlaw/congestion-commute-time-and-median-income" target="_blank">Observablehq</a></p>
+
+
+<div class='blogback'><a href='/blog.html'>Back to blog</a></div>
+
       
         <div class='sdefault'>
     <ul class='soc'>
