@@ -4,6 +4,8 @@ title: Wing-Sum Law | Research
 ---
 ## Research
 
+I currently research biophysics of cell migration in [the Chaudhuri Lab](https://chaudhurilab.stanford.edu/){:target="_blank"} at Stanford University, and recently advanced to candidacy status. Stay tuned for more research updates!
+
 ### Publications
 
 * Robert J. Nims, Alexander D. Cigan, Krista M. Durney, Brian K. Jones, John D. O'Neill, Wing-Sum A. Law, Gordana Vunjak-Novakovic, Clark T. Hung, and Gerard A. Ateshian. _Constrained Cage Culture Improves Engineered Cartilage Functional Properties by Enhancing Collagen Network Stability._ Tissue Engineering Part A 23, 847–858 (2017). [Pubmed Link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5567877/)
