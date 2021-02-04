@@ -1,27 +1,11 @@
-{% if page.url != '/' %}
-  <nav class='desktop'>
-    <ul class='mobnavdown'>
-      {% for item in site.data.navigation %}
-        <li class='nav'>
-          <a href='{{ item.link }}' {% if page.url == item.link or page.url contains 'blog' and item.link contains 'blog' %}class='current nav'{% else %}class='nav'{% endif %}>
-              {{ item.name }}
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
-  </nav>
-{% endif %}
-
-{% if page.url == '/' %}
-  <nav>
-    <ul class='nav'>
-      {% for item in site.data.navigation %}
-        <li class='nav'>
-          <a href='{{ item.link }}' {% if page.url == item.link %}class='current nav'{% else %}class='nav'{% endif %}>
-              {{ item.name }}
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
-  </nav>
-{% endif %}
+<nav class='desktop'>
+  <ul class='mobnavdown'>
+    {% for item in site.data.navigation %}
+      <li class='nav'>
+        <a href='{{ item.link }}' {% if page.url == item.link or page.url contains 'blog' and item.link contains 'blog' %}class='current nav'{% else %}class='nav'{% endif %}>
+            {{ item.name }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

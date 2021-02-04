@@ -11,37 +11,43 @@
     <link rel="icon" href="/assets/images/favicon.png">
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script>
-        $(document).ready(function(){
-        $(".mobnav").click(function(){
-        $("ul.mobnavdown").slideToggle("slow");
-        });
-        });
-    </script>
+    <script src="/assets/js/mobnav.js"></script>
+    {% if page.url == '/' %}<script src="/assets/js/homepage.js"></script>{% endif %}
 
   </head>
   <body>
+    
+    <div class='dbox'>
 
-    <div {% if page.url == '/' %}class='hbox'{% else %}class='dbox'{% endif %}>
       {% include homebutton.html %}
 
-      <div {% if page.url == '/' %}class='hnest'{% else %}class='dnest'{% endif %}>
+      <div class='dnest'>
+
         {% if page.url == '/' %}
-        <h1><img class='hfav' src='/assets/images/favicon.png'>ing-Sum Law</h1>
-          <p>PhD Student, Dancer, Aspiring Home Chef</p>
+          <div id='homeid'>
+            <h1><img class='hfav' src='/assets/images/favicon.png'>ing-Sum Law</h1>
+            <p>PhD Student, Dancer, Aspiring Digital Illustrator</p>
+          </div>
         {% endif %}
 
         {% include navigation.html %}
-
+        
         {% if page.url == '/' %}
-          {% include social.html %}
-        {% endif %}
+          <div id='homesoc'>
+            {% include social.html %}
+          </div>
+        {% endif %} 
 
-      </div>
-
+      </div> 
+      
       {% include mnavigation.html %}
 
     </div>
+
+    {% if page.url == '/' %}
+      <div id='filler'></div>
+      <div id='bottomgrad'></div>
+    {% endif %}
 
     <div class='content'>
       {{ content }}

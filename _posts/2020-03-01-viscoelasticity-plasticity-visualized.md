@@ -4,6 +4,8 @@ title: Viscoelasticity & Plasticity, Visualized
 description: An interactive figure showing elastic, viscous, and plastic behaviors.
 category: blog
 tags: data-viz d3-js
+thumb: /assets/images/thumbs/20200301.png
+include: true
 ---
 Elasticity, viscosity, and plasticity are important material parameters. But what do they actually look like? And why should biologists care about these properties?
 

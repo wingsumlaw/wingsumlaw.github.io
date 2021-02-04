@@ -2,16 +2,3 @@
 layout: default
 title: Blog
 ---
-<h1>Blog</h1>
-
-<ul class='posts'>
-    {% for post in site.posts %}
-        <li>
-            <h2><a class='bloglink' href='{{ post.url }}'>{{ post.title }}</a></h2>
-            <p>{{ post.date | date: "%Y-%m-%d" }}</p>
-            <p class='bigger'>{{ post.description }}</p>
-            <p>{{ post.excerpt }}</p>
-        </li>
-        <li>&nbsp;</li>
-    {% endfor %}
-</ul>

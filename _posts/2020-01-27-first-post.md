@@ -3,10 +3,12 @@ layout: post
 title: First Post, Worst Post?
 description: A brief explanation of the illustration on my home page
 category: blog
-tags: digital-illustration goals recommendations data-viz
+tags: digital-illustration art data-viz
+thumb: /assets/images/thumbs/20200127.png
+include: true
 ---
 
-Back in August of last year, I drew a basic illustration depicting the menstrual cycle. It has since become a main feature on all of my web presence. 
+Back in August of last year, I drew a basic illustration depicting the menstrual cycle. It has since become a main feature on all of my web presence.
 
 ![Menstrual Cycle](/assets/images/home.png){: .full}
 

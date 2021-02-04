@@ -3,7 +3,9 @@ layout: post
 title: CrossRef Publications Over Time
 description: A way for me to learn some D3.js basics
 category: blog
-tags: data-viz d3-js
+tags: data-viz d3-js incomplete
+thumb: /assets/images/thumbs/20200218.png
+include: false
 ---
 In an attempt to learn d3.js and how to use an API, I created a graph that depicts journal article trends on CrossRef.
 

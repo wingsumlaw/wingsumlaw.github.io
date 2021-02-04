@@ -11,6 +11,7 @@ When not in lab, you might find me...
 * dancing with [Stanford Dv8](https://stanforddv8.wixsite.com/stanforddv8){:target="_blank"},
 * drawing,
 * running a Dungeons & Dragons game,
+* writing grants for [BioJam](https://biojamcamp.weebly.com/){:target="_blank"},
 * or relaxing with my [rabbits](/rabbits.html)
 
 I try not to take myself too seriously :)

@@ -11,113 +11,98 @@
     <link rel="icon" href="/assets/images/favicon.png">
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script>
-        $(document).ready(function(){
-        $(".mobnav").click(function(){
-        $("ul.mobnavdown").slideToggle("slow");
-        });
-        });
-    </script>
+    <script src="/assets/js/mobnav.js"></script>
+    
 
   </head>
   <body>
-
+    
     <div class='dbox'>
+
       <a href='/' class='home'>
     <img class='hdefault' src='/assets/images/home.png'>
-    <img class='hfav' src='/assets/images/favicon.png'>ing-Sum Law
+    <div id='homescroll'>
+        <img class='hfav' src='/assets/images/favicon.png'>ing-Sum Law
+    </div>
 </a>
 
       <div class='dnest'>
-        
-
-        
-  <nav class='desktop'>
-    <ul class='mobnavdown'>
-      
-        <li class='nav'>
-          <a href='/about.html' class='nav'>
-              About
-          </a>
-        </li>
-      
-        <li class='nav'>
-          <a href='/resume.html' class='current nav'>
-              Resume
-          </a>
-        </li>
-      
-        <li class='nav'>
-          <a href='/research.html' class='nav'>
-              Research
-          </a>
-        </li>
-      
-        <li class='nav'>
-          <a href='/rabbits.html' class='nav'>
-              Rabbits
-          </a>
-        </li>
-      
-        <li class='nav'>
-          <a href='/blog.html' class='nav'>
-              Blog
-          </a>
-        </li>
-      
-    </ul>
-  </nav>
-
-
-
 
         
 
-      </div>
+        <nav class='desktop'>
+  <ul class='mobnavdown'>
+    
+      <li class='nav'>
+        <a href='/about.html' class='nav'>
+            About
+        </a>
+      </li>
+    
+      <li class='nav'>
+        <a href='/resume.html' class='current nav'>
+            Resume
+        </a>
+      </li>
+    
+      <li class='nav'>
+        <a href='/research.html' class='nav'>
+            Research
+        </a>
+      </li>
+    
+      <li class='nav'>
+        <a href='/rabbits.html' class='nav'>
+            Rabbits
+        </a>
+      </li>
+    
+  </ul>
+</nav>
 
+        
+         
+
+      </div> 
       
-  <div class='mobnav'>
-    Menu
-  </div>
-  <nav class='mobile'>
-    <ul class='mobnavdown'>
-      
-        <li class='nav'>
-          <a href='/about.html' class='nav'>
-              About
-          </a>
-        </li>
-      
-        <li class='nav'>
-          <a href='/resume.html' class='current nav'>
-              Resume
-          </a>
-        </li>
-      
-        <li class='nav'>
-          <a href='/research.html' class='nav'>
-              Research
-          </a>
-        </li>
-      
-        <li class='nav'>
-          <a href='/rabbits.html' class='nav'>
-              Rabbits
-          </a>
-        </li>
-      
-        <li class='nav'>
-          <a href='/blog.html' class='nav'>
-              Blog
-          </a>
-        </li>
-      
-    </ul>
-  </nav>
+      <div class='mobnav'>
+  &#9759;
+</div>
+<nav class='mobile'>
+  <ul class='mobnavdown'>
+    
+      <li class='nav'>
+        <a href='/about.html' class='nav'>
+            About
+        </a>
+      </li>
+    
+      <li class='nav'>
+        <a href='/resume.html' class='current nav'>
+            Resume
+        </a>
+      </li>
+    
+      <li class='nav'>
+        <a href='/research.html' class='nav'>
+            Research
+        </a>
+      </li>
+    
+      <li class='nav'>
+        <a href='/rabbits.html' class='nav'>
+            Rabbits
+        </a>
+      </li>
+    
+  </ul>
+</nav>
 
 
 
     </div>
+
+    
 
     <div class='content'>
       <h2 id="resume">Resume</h2>
@@ -136,6 +121,31 @@
     </tr>
     <tr>
       <td style="text-align: left"><em>COLUMBIA UNIVERSITY</em> <br />Graduated <em>magna cum laude</em> with a B.S. in mechanical engineering (GPA 3.95)</td>
+      <td style="text-align: right">Fall 2014 - Spring 2018</td>
+    </tr>
+  </tbody>
+</table>
+
+<p> </p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Service</th>
+      <th style="text-align: right"> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><em>BIOJAM</em> <br /> Fundraising lead designing sustainable financial strategy through grants and sponsorships for <a href="https://biojamcamp.weebly.com/" target="_blank">BioJam</a></td>
+      <td style="text-align: right">Winter 2020 - Present</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><em>STANFORD SCIENCE POLICY GROUP</em> <br /> Grant writer for <a href="https://stanfordscipol.com/" target="_blank">SSPG</a></td>
+      <td style="text-align: right">Fall 2020 - Present</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><em>COLUMBIA UNIVERSITY ENGINEERS WITHOUT BORDERS</em> <br /> Grant writer and Co-President focused on strengthening relationships with alumni, mentor orgs, and sponsors</td>
       <td style="text-align: right">Fall 2014 - Spring 2018</td>
     </tr>
   </tbody>
@@ -185,23 +195,22 @@
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: left"><em>CSNE at the University of Washington</em> <br /> REU student developing models and simulating gait for children with cerebral palsy in <a href="https://steelelab.me.uw.edu/" target="_blank">Dr. Kat Steele’s group</a></td>
+      <td style="text-align: left"><em>CSNE AT UNIVERSITY OF WASHINGTON</em> <br /> REU student developing models and simulating gait for children with cerebral palsy in <a href="https://steelelab.me.uw.edu/" target="_blank">Dr. Kat Steele’s group</a></td>
       <td style="text-align: right">Summer 2017</td>
     </tr>
     <tr>
-      <td style="text-align: left"><em>Undergraduate Research at Columbia University</em> <br /> Undergraduate Researcher and Amgen Scholar (Summer 2016) in <a href="https://mbl.me.columbia.edu/" target="_blank">Dr. Gerard Ateshian’s lab</a> researching cartilage mechanics and engineering</td>
+      <td style="text-align: left"><em>UNDERGRAD RESEARCH AT COLUMBIA UNIVERSITY</em> <br /> Undergraduate Researcher and Amgen Scholar (Summer 2016) in <a href="https://mbl.me.columbia.edu/" target="_blank">Dr. Gerard Ateshian’s lab</a> researching cartilage mechanics and engineering</td>
       <td style="text-align: right">Winter 2016 - Spring 2017</td>
     </tr>
     <tr>
-      <td style="text-align: left"><em>Seattle Genetics</em> <br /> Researched acquired aplastic anemia etiology and its possible treatment using an antibody-drug conjugate</td>
+      <td style="text-align: left"><em>SEATTLE GENETICS</em> <br /> Researched acquired aplastic anemia etiology and its possible treatment using an antibody-drug conjugate</td>
       <td style="text-align: right">Summer 2015</td>
     </tr>
   </tbody>
 </table>
 
-
       
-        <div class='sdefault'>
+        <div id='socscroll' class='sdefault'>
     <ul class='soc'>
         
             <li class='soc'>

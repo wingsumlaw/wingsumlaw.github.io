@@ -3,14 +3,24 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    margin: 0px;
+}
+
 body {
     font-family: 'Barlow', sans-serif;
     font-size: 1.05em;
+    scroll-behavior: smooth;
 }
 
 p.bigger {
     font-size: 1.1em;
     font-style: italic;
+}
+
+p.bold {
+    font-weight: bold;
 }
 
 a {
@@ -47,7 +57,7 @@ table td {
     padding: 1.5em;
     left: 5%;
     width: 90%;
-    margin-top: 5%;
+    margin-top: 6%;
 }
 
 .content img {
@@ -86,6 +96,7 @@ a.nav {
 
 ul.nav {
     padding: 0;
+    margin: 0;
 }
 
 ul.mobnavdown {
@@ -154,6 +165,7 @@ a.social {
 .mobnav {
     display: none;
     align-self: center;
+    font-size: 1.7em;
 }
 
 li.mobli {
@@ -231,6 +243,7 @@ img.hindex {
     resize: both;
     align-items: center;
     display: flex;
+    z-index: 1;
 }
 
 .hnest {
@@ -245,11 +258,6 @@ img.hindex {
 }
 
 // ****** BLOG ******
-
-ul.posts {
-    list-style-type: none;
-    padding: 5px 0;
-}
 
 a.bloglink {
     color: black;
@@ -267,10 +275,74 @@ a.bloglink {
     text-align: center;
 }
 
+.blogcontainer {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.postcontainer {
+    margin: 0.8em 0;
+    flex-basis: 30%;
+    overflow: hidden;
+    position: relative;
+}
+
+img.thumb {
+    width: 100%;
+    position: relative;
+}
+
+.description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: linear 0.5s; 
+    color: white;
+    opacity: 0;
+    padding: 1em;
+    font-weight: normal;
+}
+
+.postcontainer:hover .description {
+    opacity: 1;
+}
+
 // embed observable
 .fullwidth {
     width: 100%;
-  }
+}
+
+// homepage scroller
+
+.halfhide {
+    opacity: 0.5 !important;
+}
+
+.hideme {
+    opacity: 0 !important;
+}
+
+.removeme {
+    display: none !important;
+}
+
+#filler {
+    height: 78%;
+}
+
+#bottomgrad {
+    width: 100%;
+    height: 10%;
+    z-index: 2;
+    position: fixed;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0),rgba(255,255,255,1));
+}
 
 // ****** SMALL SCREEN ******
 
@@ -293,6 +365,7 @@ a.bloglink {
 
     .content {
         padding: 1.5em 2em 1.5em 1em;
+        margin-top: 10%;
     }
 
     img.social {
@@ -441,6 +514,14 @@ a.bloglink {
 
     ul.mobnavdown li:last-child {
         margin: 0px 3px;
+    }
+
+    .postcontainer {
+        flex-basis: 100%;
+    }
+
+    img.thumb {
+        width: 100%;
     }
 
 }

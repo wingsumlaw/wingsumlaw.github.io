@@ -3,9 +3,11 @@ layout: post
 title: Commuting & Income in the Bay Area
 description: An incomplete doodle of Bay Area commuting and income
 category: blog
-tags: data-viz d3-js
+tags: data-viz d3-js incomplete
+thumb: /assets/images/thumbs/20200727.png
+include: true
 ---
-I never did finish this, but I probably won't so I'm putting it out there now.
+I never did finish this, but I probably won't so I'm putting it out there now. Note: you may need to fiddle with the width of your browser window for the figure to be correctly aligned (all maps should be in a single row).
 
 <script type="module">
     // Load the Observable runtime and inspector.

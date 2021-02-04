@@ -11,71 +11,64 @@
     <link rel="icon" href="/assets/images/favicon.png">
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script>
-        $(document).ready(function(){
-        $(".mobnav").click(function(){
-        $("ul.mobnavdown").slideToggle("slow");
-        });
-        });
-    </script>
+    <script src="/assets/js/mobnav.js"></script>
+    <script src="/assets/js/homepage.js"></script>
 
   </head>
   <body>
+    
+    <div class='dbox'>
 
-    <div class='hbox'>
       <a href='/' class='home'>
     <img class='hindex' src='/assets/images/home.png'>
-    
+    <div id='homescroll'>
+        <img class='hfav' src='/assets/images/favicon.png'>ing-Sum Law
+    </div>
 </a>
 
-      <div class='hnest'>
-        
-        <h1><img class='hfav' src='/assets/images/favicon.png'>ing-Sum Law</h1>
-          <p>PhD Student, Dancer, Aspiring Digital Illustrator</p>
-        
+      <div class='dnest'>
 
         
+          <div id='homeid'>
+            <h1><img class='hfav' src='/assets/images/favicon.png'>ing-Sum Law</h1>
+            <p>PhD Student, Dancer, Aspiring Digital Illustrator</p>
+          </div>
+        
 
-
-  <nav>
-    <ul class='nav'>
-      
-        <li class='nav'>
-          <a href='/about.html' class='nav'>
-              About
-          </a>
-        </li>
-      
-        <li class='nav'>
-          <a href='/resume.html' class='nav'>
-              Resume
-          </a>
-        </li>
-      
-        <li class='nav'>
-          <a href='/research.html' class='nav'>
-              Research
-          </a>
-        </li>
-      
-        <li class='nav'>
-          <a href='/rabbits.html' class='nav'>
-              Rabbits
-          </a>
-        </li>
-      
-        <li class='nav'>
-          <a href='/blog.html' class='nav'>
-              Blog
-          </a>
-        </li>
-      
-    </ul>
-  </nav>
-
+        <nav class='desktop'>
+  <ul class='mobnavdown'>
+    
+      <li class='nav'>
+        <a href='/about.html' class='nav'>
+            About
+        </a>
+      </li>
+    
+      <li class='nav'>
+        <a href='/resume.html' class='nav'>
+            Resume
+        </a>
+      </li>
+    
+      <li class='nav'>
+        <a href='/research.html' class='nav'>
+            Research
+        </a>
+      </li>
+    
+      <li class='nav'>
+        <a href='/rabbits.html' class='nav'>
+            Rabbits
+        </a>
+      </li>
+    
+  </ul>
+</nav>
 
         
-          <div >
+        
+          <div id='homesoc'>
+            <div id='socscroll' class='sdefault'>
     <ul class='soc'>
         
             <li class='soc'>
@@ -105,17 +98,202 @@
     </ul>
 </div>
 
-        
+          </div>
+         
 
-      </div>
-
+      </div> 
       
+      <div class='mobnav'>
+  &#9759;
+</div>
+<nav class='mobile'>
+  <ul class='mobnavdown'>
+    
+      <li class='nav'>
+        <a href='/about.html' class='nav'>
+            About
+        </a>
+      </li>
+    
+      <li class='nav'>
+        <a href='/resume.html' class='nav'>
+            Resume
+        </a>
+      </li>
+    
+      <li class='nav'>
+        <a href='/research.html' class='nav'>
+            Research
+        </a>
+      </li>
+    
+      <li class='nav'>
+        <a href='/rabbits.html' class='nav'>
+            Rabbits
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+
 
 
     </div>
 
+    
+      <div id='filler'></div>
+      <div id='bottomgrad'></div>
+    
+
     <div class='content'>
-      
+      <div class='blogcontainer'>
+    
+    
+        <div class='postcontainer'>
+            <a href ='/blog/2021/02/04/recovered-art.html'>
+                <img class='thumb' src='/assets/images/thumbs/20210204.jpg'>
+                <div class='description'>
+                    <p class='bold bigger'>Recovered Art</p>
+                    <p></p>
+                    
+                        #painting 
+                    
+                        #art 
+                    
+                </div>
+            </a>
+        </div>
+    
+    
+    
+        <div class='postcontainer'>
+            <a href ='/blog/2021/01/26/goose-drawing.html'>
+                <img class='thumb' src='/assets/images/thumbs/20210126.jpg'>
+                <div class='description'>
+                    <p class='bold bigger'>Just a fun goose drawing</p>
+                    <p></p>
+                    
+                        #digital-illustration 
+                    
+                        #art 
+                    
+                </div>
+            </a>
+        </div>
+    
+    
+    
+        <div class='postcontainer'>
+            <a href ='/blog/2020/07/27/bay-commute.html'>
+                <img class='thumb' src='/assets/images/thumbs/20200727.png'>
+                <div class='description'>
+                    <p class='bold bigger'>Commuting & Income in the Bay Area</p>
+                    <p>An incomplete doodle of Bay Area commuting and income</p>
+                    
+                        #data-viz 
+                    
+                        #d3-js 
+                    
+                        #incomplete 
+                    
+                </div>
+            </a>
+        </div>
+    
+    
+    
+        <div class='postcontainer'>
+            <a href ='/blog/2020/03/01/viscoelasticity-plasticity-visualized.html'>
+                <img class='thumb' src='/assets/images/thumbs/20200301.png'>
+                <div class='description'>
+                    <p class='bold bigger'>Viscoelasticity & Plasticity, Visualized</p>
+                    <p>An interactive figure showing elastic, viscous, and plastic behaviors.</p>
+                    
+                        #data-viz 
+                    
+                        #d3-js 
+                    
+                </div>
+            </a>
+        </div>
+    
+    
+    
+    
+    
+        <div class='postcontainer'>
+            <a href ='/blog/2020/01/30/floral-uterus.html'>
+                <img class='thumb' src='/assets/images/thumbs/20200130.png'>
+                <div class='description'>
+                    <p class='bold bigger'>Floral Uterus</p>
+                    <p></p>
+                    
+                        #digital-illustration 
+                    
+                        #art 
+                    
+                </div>
+            </a>
+        </div>
+    
+    
+    
+        <div class='postcontainer'>
+            <a href ='/blog/2020/01/27/first-post.html'>
+                <img class='thumb' src='/assets/images/thumbs/20200127.png'>
+                <div class='description'>
+                    <p class='bold bigger'>First Post, Worst Post?</p>
+                    <p>A brief explanation of the illustration on my home page</p>
+                    
+                        #digital-illustration 
+                    
+                        #art 
+                    
+                        #data-viz 
+                    
+                </div>
+            </a>
+        </div>
+    
+    
+</div>
+
+<div id='socscroll' class='sdefault'>
+    <ul class='soc'>
+        
+            <li class='soc'>
+                <a href='https://www.linkedin.com/in/wingsumlaw/' target='_blank' title='LinkedIn' class='social'>
+                    <img class='social' src='/assets/images/linkedin.png'>
+                </a>
+            </li>
+        
+            <li class='soc'>
+                <a href='https://scholar.google.com/citations?user=anHWCBwAAAAJ&hl=en' target='_blank' title='Google Scholar' class='social'>
+                    <img class='social' src='/assets/images/scholar.png'>
+                </a>
+            </li>
+        
+            <li class='soc'>
+                <a href='https://github.com/wingsumlaw/' target='_blank' title='Github' class='social'>
+                    <img class='social' src='/assets/images/github.png'>
+                </a>
+            </li>
+        
+            <li class='soc'>
+                <a href='https://twitter.com/wingsumlaw' target='_blank' title='Twitter' class='social'>
+                    <img class='social' src='/assets/images/twitter.png'>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+
+<!---
+<h2><a class='bloglink' href=''></a></h2>
+            <p></p>
+            <p class='bigger'></p>
+            <p></p>-->
       
     </div>
 

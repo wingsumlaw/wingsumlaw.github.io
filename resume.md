@@ -11,6 +11,14 @@ title: Wing-Sum Law | Resume
 
 &nbsp;
 
+| Service                      |                    |
+|:---                          |                ---:|
+| _BIOJAM_ <br> Fundraising lead designing sustainable financial strategy through grants and sponsorships for [BioJam](https://biojamcamp.weebly.com/){:target="_blank"} | Winter 2020 - Present |
+| _STANFORD SCIENCE POLICY GROUP_ <br> Grant writer for [SSPG](https://stanfordscipol.com/){:target="_blank"} | Fall 2020 - Present |
+| _COLUMBIA UNIVERSITY ENGINEERS WITHOUT BORDERS_ <br> Grant writer and Co-President focused on strengthening relationships with alumni, mentor orgs, and sponsors | Fall 2014 - Spring 2018 |
+
+&nbsp;
+
 | Honors                   |                     |
 |:---                         |                 ---:|
 | _STANFORD GRADUATE FELLOWSHIP_ <br> "SGF supports exceptional incoming and continuing doctoral students" – [from webpage](https://vpge.stanford.edu/fellowships-funding/sgf){:target="_blank"}  | Fall 2018 – Present |
@@ -23,7 +31,6 @@ title: Wing-Sum Law | Resume
 
 | Experience                   |                     |
 |:---                         |                 ---:|
-| _CSNE at the University of Washington_ <br> REU student developing models and simulating gait for children with cerebral palsy in [Dr. Kat Steele's group](https://steelelab.me.uw.edu/){:target="_blank"}  | Summer 2017 |
-| _Undergraduate Research at Columbia University_ <br> Undergraduate Researcher and Amgen Scholar (Summer 2016) in [Dr. Gerard Ateshian's lab](https://mbl.me.columbia.edu/){:target="_blank"} researching cartilage mechanics and engineering     | Winter 2016 - Spring 2017 |
-| _Seattle Genetics_ <br> Researched acquired aplastic anemia etiology and its possible treatment using an antibody-drug conjugate | Summer 2015 |
-
+| _CSNE AT UNIVERSITY OF WASHINGTON_ <br> REU student developing models and simulating gait for children with cerebral palsy in [Dr. Kat Steele's group](https://steelelab.me.uw.edu/){:target="_blank"}  | Summer 2017 |
+| _UNDERGRAD RESEARCH AT COLUMBIA UNIVERSITY_ <br> Undergraduate Researcher and Amgen Scholar (Summer 2016) in [Dr. Gerard Ateshian's lab](https://mbl.me.columbia.edu/){:target="_blank"} researching cartilage mechanics and engineering     | Winter 2016 - Spring 2017 |
+| _SEATTLE GENETICS_ <br> Researched acquired aplastic anemia etiology and its possible treatment using an antibody-drug conjugate | Summer 2015 |

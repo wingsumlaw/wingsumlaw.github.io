@@ -11,113 +11,98 @@
     <link rel="icon" href="/assets/images/favicon.png">
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script>
-        $(document).ready(function(){
-        $(".mobnav").click(function(){
-        $("ul.mobnavdown").slideToggle("slow");
-        });
-        });
-    </script>
+    <script src="/assets/js/mobnav.js"></script>
+    
 
   </head>
   <body>
-
+    
     <div class='dbox'>
+
       <a href='/' class='home'>
     <img class='hdefault' src='/assets/images/home.png'>
-    <img class='hfav' src='/assets/images/favicon.png'>ing-Sum Law
+    <div id='homescroll'>
+        <img class='hfav' src='/assets/images/favicon.png'>ing-Sum Law
+    </div>
 </a>
 
       <div class='dnest'>
-        
-
-        
-  <nav class='desktop'>
-    <ul class='mobnavdown'>
-      
-        <li class='nav'>
-          <a href='/about.html' class='nav'>
-              About
-          </a>
-        </li>
-      
-        <li class='nav'>
-          <a href='/resume.html' class='nav'>
-              Resume
-          </a>
-        </li>
-      
-        <li class='nav'>
-          <a href='/research.html' class='nav'>
-              Research
-          </a>
-        </li>
-      
-        <li class='nav'>
-          <a href='/rabbits.html' class='current nav'>
-              Rabbits
-          </a>
-        </li>
-      
-        <li class='nav'>
-          <a href='/blog.html' class='nav'>
-              Blog
-          </a>
-        </li>
-      
-    </ul>
-  </nav>
-
-
-
 
         
 
-      </div>
+        <nav class='desktop'>
+  <ul class='mobnavdown'>
+    
+      <li class='nav'>
+        <a href='/about.html' class='nav'>
+            About
+        </a>
+      </li>
+    
+      <li class='nav'>
+        <a href='/resume.html' class='nav'>
+            Resume
+        </a>
+      </li>
+    
+      <li class='nav'>
+        <a href='/research.html' class='nav'>
+            Research
+        </a>
+      </li>
+    
+      <li class='nav'>
+        <a href='/rabbits.html' class='current nav'>
+            Rabbits
+        </a>
+      </li>
+    
+  </ul>
+</nav>
 
+        
+         
+
+      </div> 
       
-  <div class='mobnav'>
-    Menu
-  </div>
-  <nav class='mobile'>
-    <ul class='mobnavdown'>
-      
-        <li class='nav'>
-          <a href='/about.html' class='nav'>
-              About
-          </a>
-        </li>
-      
-        <li class='nav'>
-          <a href='/resume.html' class='nav'>
-              Resume
-          </a>
-        </li>
-      
-        <li class='nav'>
-          <a href='/research.html' class='nav'>
-              Research
-          </a>
-        </li>
-      
-        <li class='nav'>
-          <a href='/rabbits.html' class='current nav'>
-              Rabbits
-          </a>
-        </li>
-      
-        <li class='nav'>
-          <a href='/blog.html' class='nav'>
-              Blog
-          </a>
-        </li>
-      
-    </ul>
-  </nav>
+      <div class='mobnav'>
+  &#9759;
+</div>
+<nav class='mobile'>
+  <ul class='mobnavdown'>
+    
+      <li class='nav'>
+        <a href='/about.html' class='nav'>
+            About
+        </a>
+      </li>
+    
+      <li class='nav'>
+        <a href='/resume.html' class='nav'>
+            Resume
+        </a>
+      </li>
+    
+      <li class='nav'>
+        <a href='/research.html' class='nav'>
+            Research
+        </a>
+      </li>
+    
+      <li class='nav'>
+        <a href='/rabbits.html' class='current nav'>
+            Rabbits
+        </a>
+      </li>
+    
+  </ul>
+</nav>
 
 
 
     </div>
+
+    
 
     <div class='content'>
       <h2 id="rabbits">Rabbits</h2>
@@ -132,7 +117,7 @@
 <img src="/assets/images/flop1.JPG/" alt="Flopping" /></p>
 
       
-        <div class='sdefault'>
+        <div id='socscroll' class='sdefault'>
     <ul class='soc'>
         
             <li class='soc'>
