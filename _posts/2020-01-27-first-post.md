@@ -3,7 +3,7 @@ layout: post
 title: First Post, Worst Post?
 description: A brief explanation of the illustration on my home page
 category: blog
-tags: digital-illustration art data-viz
+tags: digital-illustration art
 thumb: /assets/images/thumbs/20200127.png
 include: true
 ---

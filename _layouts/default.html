@@ -1,20 +1,6 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ page.title }}</title>
-
-    <link rel='stylesheet' href='/assets/css/styles.css'>
-    <link href="https://fonts.googleapis.com/css?family=Barlow:400,700&display=swap" rel="stylesheet">
-
-    <link rel="icon" href="/assets/images/favicon.png">
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="/assets/js/mobnav.js"></script>
-    {% if page.url == '/' %}<script src="/assets/js/homepage.js"></script>{% endif %}
-
-  </head>
+  {% include head.html %}
   <body>
     
     <div class='dbox'>
@@ -26,7 +12,7 @@
         {% if page.url == '/' %}
           <div id='homeid'>
             <h1><img class='hfav' src='/assets/images/favicon.png'>ing-Sum Law</h1>
-            <p>PhD Student, Dancer, Aspiring Digital Illustrator</p>
+            <p>Mechanical Engineer + Artist</p>
           </div>
         {% endif %}
 
@@ -54,6 +40,7 @@
       {% if page.url != '/' %}
         {% include social.html %}
       {% endif %}
+      <div class='copyright'>Copyright © 2021 Wing-Sum Law</div>
     </div>
 
   </body>

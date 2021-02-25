@@ -8,7 +8,8 @@
     <link rel='stylesheet' href='/assets/css/styles.css'>
     <link href="https://fonts.googleapis.com/css?family=Barlow:400,700&display=swap" rel="stylesheet">
 
-    <link rel="icon" href="/assets/images/favicon.png">
+    <link rel="icon" type="image/png" href="http://localhost:4000/myfavicon.png">
+    <link rel="shortcut icon" type="image/png" href="http://localhost:4000/myfavicon.png">
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="/assets/js/mobnav.js"></script>
@@ -46,8 +47,8 @@
       </li>
     
       <li class='nav'>
-        <a href='/research.html' class='nav'>
-            Research
+        <a href='/portfolio.html' class='current nav'>
+            Portfolio
         </a>
       </li>
     
@@ -84,8 +85,8 @@
       </li>
     
       <li class='nav'>
-        <a href='/research.html' class='nav'>
-            Research
+        <a href='/portfolio.html' class='current nav'>
+            Portfolio
         </a>
       </li>
     
@@ -111,13 +112,26 @@
 
 <p>Elasticity, viscosity, and plasticity are important material parameters. But what do they actually look like? And why should biologists care about these properties?</p>
 
+<p>Below is an interactive exploration of the ways we mathematically describe viscoelasticity and plasticity. Please note that this demonstration is geared toward those who have studied <em>college level mechanics of materials</em>. The math could be quite difficult if you haven’t taken it before!</p>
+
+<h2 id="output-of-a-bingham-plastic--standard-linear-solid-sls-model">Output of a Bingham Plastic + Standard Linear Solid (SLS) Model</h2>
+
+<p>We represent the different parameters of a material as a series of dashpots and springs:</p>
+
+<ul>
+  <li>The <strong>yield stress</strong> of a material is the stress at which a material will begin to deform plastically</li>
+  <li>The elastic nature of a material is represented by <strong>springs</strong></li>
+  <li>The viscous nature of a material is represented by <strong>dashpots</strong></li>
+</ul>
+
+<p>Experiment with different material parameters by fiddling with the sliders below:</p>
+
 <script type="module">
     // Load the Observable runtime and inspector.
     import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
     import notebook from "https://api.observablehq.com/@wingsumlaw/viscoelasticity-plasticity-visualized.js?v=3";
 
     const renders = {
-        "intro": "intro",
         "viewof inputs": "viewof-inputs",
         "intro2": "intro2",
         "anim": "anim",
@@ -189,7 +203,8 @@
 <p>Check out the whole notebook on <a href="https://observablehq.com/@wingsumlaw/viscoelasticity-plasticity-visualized" target="_blank">Observablehq</a></p>
 
 
-<div class='blogback'><a href='/'>Go back</a></div>
+<div class='blogback'><a href='/portfolio.html'>To Portfolio</a></div>
+<div class='blogback'><a href='/'>To Home</a></div>
 
       
         <div id='socscroll' class='sdefault'>
@@ -198,12 +213,6 @@
             <li class='soc'>
                 <a href='https://www.linkedin.com/in/wingsumlaw/' target='_blank' title='LinkedIn' class='social'>
                     <img class='social' src='/assets/images/linkedin.png'>
-                </a>
-            </li>
-        
-            <li class='soc'>
-                <a href='https://scholar.google.com/citations?user=anHWCBwAAAAJ&hl=en' target='_blank' title='Google Scholar' class='social'>
-                    <img class='social' src='/assets/images/scholar.png'>
                 </a>
             </li>
         
@@ -223,6 +232,7 @@
 </div>
 
       
+      <div class='copyright'>Copyright © 2021 Wing-Sum Law</div>
     </div>
 
   </body>

@@ -1,9 +1,9 @@
 - name: LinkedIn
   link: https://www.linkedin.com/in/wingsumlaw/
   image: /assets/images/linkedin.png
-- name: Google Scholar
-  link: https://scholar.google.com/citations?user=anHWCBwAAAAJ&hl=en
-  image: /assets/images/scholar.png
+#- name: Google Scholar
+#  link: https://scholar.google.com/citations?user=anHWCBwAAAAJ&hl=en
+#  image: /assets/images/scholar.png
 - name: Github
   link: https://github.com/wingsumlaw/
   image: /assets/images/github.png

@@ -72,8 +72,21 @@ table td {
     display: block;
 }
 
+.content img.half {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
 .content a {
     font-weight: bold;
+}
+
+.content .copyright {
+    width: 100%;
+    text-align: center;
+    margin: 1em 0;
+    font-size: 0.8em;
 }
 
 iframe {
@@ -310,6 +323,25 @@ img.thumb {
 
 .postcontainer:hover .description {
     opacity: 1;
+}
+
+.foliowide {
+    margin: 0.8em 0;
+    flex-basis: 60%;
+    overflow: hidden;
+    position: relative;
+}
+
+.folionarrow {
+    margin: 0.8em 0;
+    flex-basis: 30%;
+    overflow: hidden;
+    position: relative; 
+}
+
+.foliodescription {
+    font-weight: normal;
+    color: black;
 }
 
 // embed observable

@@ -1,0 +1,16 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }}</title>
+
+    <link rel='stylesheet' href='/assets/css/styles.css'>
+    <link href="https://fonts.googleapis.com/css?family=Barlow:400,700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="{{ 'myfavicon.png' | absolute_url }}">
+    <link rel="shortcut icon" type="image/png" href="{{ 'myfavicon.png' | absolute_url }}">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="/assets/js/mobnav.js"></script>
+    {% if page.url == '/' %}<script src="/assets/js/homepage.js"></script>{% endif %}
+
+  </head>
