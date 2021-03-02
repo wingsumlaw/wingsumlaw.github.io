@@ -54,7 +54,13 @@ Below is a portfolio-in-progress that I hope showcases **my thought process, aes
     {% if post.include == true %}
     {% if post.tags contains 'digital-illustration'%}
         <div class='postcontainer'>
-            <img class='thumb' src='{{ post.thumb }}'>
+            <a href ='{{ post.url }}'>
+                <img class='thumb' src='{{ post.thumb }}'>
+                <div class='description'>
+                    <p class='bold bigger'>{{ post.title }}</p>
+                    <p>{{ post.description }}</p>
+                </div>
+            </a>
         </div>
     {% endif %}
     {% endif %}
